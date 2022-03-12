@@ -1,0 +1,33 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+footer {
+  background-image: linear-gradient(#cec8ff, white);
+  padding: 20px;
+}
+.jumbotron {
+  margin: 0;
+  padding: 30px;
+  height: 900px;
+  background-image: linear-gradient(to right, #0a5a83, #0f6897, #0a5a83);
+  color: white;
+  text-align: center;
+}
+
+.jumbotron h1 h2 {
+  color: white;
+}
+.name {
+  margin-top: 380px;
+  font-weight: 500;
+  font-size: 2rem;
+}
+.navbar-dark {
+  margin-top: -16px;
+  background-color: #0a5a83;
+  color: white;
+}
+.site-footer {
+  background-image: linear-gradient(#cec8ff, white);
+  padding: 20px 0;
+}
