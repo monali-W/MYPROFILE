@@ -14,30 +14,6 @@ class Header extends Component {
             </div>
           </div>
         </header>
-        <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="/">
-                Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutus.html">
-                About
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="project.html">
-                Project
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contactme.html">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
       </React.Fragment>
     );
   }

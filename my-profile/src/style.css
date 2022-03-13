@@ -1,5 +1,6 @@
 body {
   font-family: "Open Sans", sans-serif;
+  margin: 0px;
 }
 footer {
   background-image: linear-gradient(#cec8ff, white);
@@ -7,8 +8,9 @@ footer {
 }
 .jumbotron {
   margin: 0;
+  margin-bottom: 0 !important;
   padding: 30px;
-  height: 900px;
+  height: 1000px;
   background-image: linear-gradient(to right, #0a5a83, #0f6897, #0a5a83);
   color: white;
   text-align: center;
@@ -23,11 +25,85 @@ footer {
   font-size: 2rem;
 }
 .navbar-dark {
-  margin-top: -16px;
+  /* margin-top: -16px; */
   background-color: #0a5a83;
   color: white;
 }
 .site-footer {
   background-image: linear-gradient(#cec8ff, white);
   padding: 20px 0;
+}
+#main-nav li {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.25em;
+  padding: 0 5px;
+}
+@media only screen and (max-width: 575px) {
+  #header-section #header-image-container img {
+    max-width: 80%;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#about-section {
+  background-color: #0a5a83;
+  padding-bottom: 40px;
+}
+#about-section #about-content-div .pull-quote {
+  font-family: "Raleway", sans-serif;
+  margin: 5px 0 0;
+  font-weight: 800;
+  color: #6bb8d9;
+  margin-bottom: 50px;
+}
+
+.heading-div {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #cdeeff;
+}
+p {
+  padding: 1px;
+  color: white;
+}
+.h3 {
+  color: #4588a5;
+}
+#about-section #about-content-div #headshot-div img {
+  max-width: 50%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.4666666666666667);
+}
+@media only screen and (max-width: 768px) {
+  #about-section #about-content-div #headshot-div img {
+    max-width: 40%;
+  }
+}
+#about-section #stack-div {
+  background-color: #0a5a83;
+  border: 5px solid #1f5f82;
+  border-radius: 50px;
+  top: 75px;
+}
+#about-section #stack-div #stack-icon-div {
+  max-height: 25vh;
+  padding-bottom: 30px;
+}
+#about-section #stack-div #stack-icon-div .stack-icon {
+  max-height: 80px;
 }
