@@ -1,4 +1,5 @@
 import React from "react";
+import Headshot from "../images/pic.jpg";
 
 function About() {
   return (
@@ -10,12 +11,18 @@ function About() {
           </div>
         </div>
         <div id="about-content-div" className="row align-items-center">
-          <div id="my-image" className="col-12 col-lg-6">
+          <div
+            id="headshot-div"
+            className="col-12 col-lg-6 py-3"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             <img
-              id="my-img"
-              alt=""
+              id="headshot-img"
               className="mx-auto d-block"
-              src="mylogo.jpg"
+              src={Headshot}
+              alt=""
             />
           </div>
           <div
