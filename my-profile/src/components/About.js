@@ -1,5 +1,11 @@
 import React from "react";
 import Headshot from "../images/pic.jpg";
+import HtmlIcon from "../images/icon-html.svg";
+import JsIcon from "../images/icon-js.svg";
+import ReactIcon from "../images/icon-react.svg";
+import CssIcon from "../images/icon-react.svg";
+import BootstrapIcon from "../images/icon-react.svg";
+import SassIcon from "../images/icon-sass.svg";
 
 function About() {
   return (
@@ -53,6 +59,38 @@ function About() {
                 Take a look through the below samples of my work, and feel free
                 to send me a message. I'd love to hear from you!
               </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="stack-div"
+          className="row position-relative mx-auto"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <div className="heading-div col-12 text-center">
+            <h3 className="font-light mt-3">My Dev Stack</h3>
+          </div>
+          <div id="stack-icon-div" className="col-12 d-flex flex-wrap">
+            <div className="col-4 col-sm-2 py-2 text-center">
+              <img src={HtmlIcon} className="stack-icon" alt="HTML 5" />
+            </div>
+            <div className="col-4 col-sm-2 py-2 text-center">
+              <img src={JsIcon} className="stack-icon" alt="Javascript ES6" />
+            </div>
+            <div className="col-4 col-sm-2 py-2 text-center">
+              <img src={CssIcon} className="stack-icon" alt="CSS 3" />
+            </div>
+            <div className="col-4 col-sm-2 py-2 text-center">
+              <img src={BootstrapIcon} className="stack-icon" alt="Bootstrap" />
+            </div>
+            <div className="col-4 col-sm-2 py-2 text-center">
+              <img src={SassIcon} className="stack-icon" alt="Sass" />
+            </div>
+            <div className="col-4 col-sm-2 py-2 text-center">
+              <img src={ReactIcon} className="stack-icon" alt="React JS" />
             </div>
           </div>
         </div>
