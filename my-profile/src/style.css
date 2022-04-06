@@ -2,15 +2,12 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0px;
 }
-footer {
-  background-image: linear-gradient(#cec8ff, white);
-  padding: 20px;
-}
+
 .jumbotron {
   margin: 0;
   margin-bottom: 0 !important;
   padding: 30px;
-  height: 1000px;
+  height: 900px;
   background-image: linear-gradient(to right, #0a5a83, #0f6897, #0a5a83);
   color: white;
   text-align: center;
@@ -29,10 +26,7 @@ footer {
   background-color: #0a5a83;
   color: white;
 }
-.site-footer {
-  background-image: linear-gradient(#cec8ff, white);
-  padding: 20px 0;
-}
+
 #main-nav li {
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -63,6 +57,7 @@ footer {
 #about-section {
   background-color: #0a5a83;
   padding-bottom: 40px;
+  height: 800px;
 }
 #about-section #about-content-div .pull-quote {
   font-family: "Raleway", sans-serif;
@@ -95,15 +90,117 @@ p {
   }
 }
 #about-section #stack-div {
-  background-color: #0a5a83;
+  background-color: #1b7daf;
   border: 5px solid #1f5f82;
   border-radius: 50px;
-  top: 75px;
+  top: 100px;
 }
 #about-section #stack-div #stack-icon-div {
   max-height: 25vh;
   padding-bottom: 30px;
 }
 #about-section #stack-div #stack-icon-div .stack-icon {
+  max-height: 80px;
+}
+
+#projects-section {
+  background-color: #1f5f82;
+  padding: 100px 0 30px;
+}
+
+.heading-div {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #cdeeff;
+  margin: 0;
+  font-size: 50px;
+  -webkit-appearance: none;
+  appearance: none;
+  padding-top: 31px;
+}
+#projects-section #call-to-action-div {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-color: #4588a5;
+  border: 5px solid #124663;
+  border-radius: 50px;
+  top: 100px;
+}
+.heading-div {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #cdeeff;
+  margin: 0;
+  font-size: 50px;
+  -webkit-appearance: none;
+  appearance: none;
+  padding-top: 31px;
+}
+#projects-section #call-to-action-div .body-copy {
+  margin: 0 auto;
+  text-align: center;
+  color: #cdeeff;
+  max-width: 80%;
+  padding: 0 0 30px;
+}
+#contact-section {
+  background-color: #124663;
+  padding: 100px 0 50px;
+}
+.heading-div {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #cdeeff;
+  margin: 0;
+  font-size: 50px;
+  -webkit-appearance: none;
+  appearance: none;
+  padding-top: 31px;
+}
+#contact-section #form-div {
+  margin: 30px 0 0;
+}
+#contact-section #form-div form {
+  background-color: #1f5f82;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 700px;
+}
+#contact-section #form-div form input[type="text"],
+#contact-section #form-div form textarea {
+  font-family: "Raleway", sans-serif;
+  color: #cdeeff;
+  background-color: #124663;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px #cdeeff;
+}
+#contact-section #form-div form #submit-bttn-div #submit {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #cdeeff;
+  transition-duration: 0.3s;
+  box-shadow: 0 4px #124663;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid #cdeeff;
+  background-color: transparent;
+}
+#contact-section #form-div form #submit-bttn-div {
+  margin: 0 auto;
+}
+#contact-section #contact-menu-div {
+  padding: 50px 0 0;
+}
+#contact-section #contact-menu-div .social-media-icon {
   max-height: 80px;
 }
