@@ -3,6 +3,7 @@ import { Container } from "reactstrap";
 import linkedInIcon from "../images/social-icon-linkedin.svg";
 import gitHubIcon from "../images/social-icon-github.svg";
 import instagramIcon from "../images/social-icon-instagram.svg";
+import twitterIcon from "../images/social-icon-twitter.svg";
 
 function ContactArea() {
   return (
@@ -101,6 +102,19 @@ function ContactArea() {
                   src={instagramIcon}
                   className="social-media-icon"
                   alt="Instagram"
+                />
+              </a>
+            </div>
+            <div className="col text-center">
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={twitterIcon}
+                  className="social-media-icon"
+                  alt="Twitter"
                 />
               </a>
             </div>
