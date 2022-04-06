@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import NavbarComponent from "./components/NavbarComponent";
 import About from "./components/About";
-
+import Project from "./components/Projects";
 import Contact from "./components/Contact";
 
 class App extends Component {
@@ -13,7 +13,7 @@ class App extends Component {
         <Header />
         <NavbarComponent />
         <About />
-
+        <Project />
         <Contact />
         <Footer />
       </div>
