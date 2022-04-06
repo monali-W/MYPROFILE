@@ -4,6 +4,9 @@
 // import ssPrintsPlusVid from "../images/videos/ssprints.mp4";
 // import greyAreaServicesImg from "../images/project-greyarea.png";
 import homePage from "../images/homePage.png";
+import giftCard from "../images/giftCard.png";
+import giftCardAdd from "../images/giftCardAdd.png";
+import background from "../images/background.png";
 // import jobsAppImg from "../images/project-jobsapp.png";
 // import jobsAppVid from "../images/videos/jobsapp.mp4";
 // import upNextImg from "../images/project-up-next-app.png";
@@ -12,10 +15,13 @@ import homePage from "../images/homePage.png";
 export const PROJECTS = [
   {
     id: "project1",
-    name: "Campsite Website",
+    name: "Gift Card Wallet",
     description:
       "This React-based application allows users to look for various types of campsites. Where It interfaces with both the  (Open Movie Database) API to display the desired information for the user and makes use of local storage for data persistence between sessions. I designed all UI components to be fully responsive through the use of custom CSS and flexbox. ",
     image: homePage,
+    image1: giftCard,
+    image2: giftCardAdd,
+    image3: background,
     // video: upNextVid,
     github: "https://github.com/monali-W/nucampsite",
     demo: "https://github.com/monali-W/nucampsite"

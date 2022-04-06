@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import NavbarComponent from "./components/NavbarComponent";
+// import NavbarComponent from "./components/NavbarComponent";
 import About from "./components/About";
-import Project from "./components/Projects";
+import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 class App extends Component {
@@ -11,9 +11,9 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <NavbarComponent />
+        {/* <NavbarComponent /> */}
         <About />
-        <Project />
+        <Projects />
         <Contact />
         <Footer />
       </div>
