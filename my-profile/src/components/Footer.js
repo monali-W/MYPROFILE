@@ -9,6 +9,7 @@ function Footer() {
             <div className="col-12 col-sm-6 col-md-4 text-center">
               <div className="pt-3">
                 <p className="body-copy">
+                  <h4> Monali Wasekar </h4>
                   Let's create something great together!
                 </p>
               </div>
@@ -36,8 +37,6 @@ function Footer() {
                 </li>
               </ul>
             </div>
-
-            <div className="col-12 col-sm-6 col-md-4"></div>
           </div>
         </div>
       </footer>

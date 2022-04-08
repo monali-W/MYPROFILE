@@ -1,11 +1,12 @@
-import React from "react";
+import React, { Component } from "react";
 import Headshot from "../images/pic.jpg";
 import HtmlIcon from "../images/icon-html.svg";
 import JsIcon from "../images/icon-js.svg";
 import ReactIcon from "../images/icon-react.svg";
-import CssIcon from "../images/icon-react.svg";
-import BootstrapIcon from "../images/icon-react.svg";
+import CssIcon from "../images/icon-css.svg";
+import BootstrapIcon from "../images/icon-bootstrap.svg";
 import SassIcon from "../images/icon-sass.svg";
+// import { Transition } from "react-transition-group";
 
 function About() {
   return (
