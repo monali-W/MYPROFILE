@@ -17,6 +17,9 @@ import nucampsite3 from "../images/nucampsite3.png";
 export const PROJECTS = [
   {
     id: "project1",
+    carouselId: "carousel1",
+    carouseltarget: "#carousel1",
+
     name: "Gift Card Wallet",
     description:
       "This React-based application allows users to look for various types of campsites. Where It interfaces with both the  (Open Movie Database) API to display the desired information for the user and makes use of local storage for data persistence between sessions. I designed all UI components to be fully responsive through the use of custom CSS and flexbox. ",
@@ -31,12 +34,15 @@ export const PROJECTS = [
 
   {
     id: "project2",
+    carouselId: "carousel2",
+    carouseltarget: "#carousel2",
     name: "Nucampsite",
     description:
       "  I proceeded to build this website using React, Bootstrap (via the ReactStrap library), and custom CSS. ",
     image: nucampsite1,
     image1: nucampsite2,
-    image2: nucampsite3
+    image2: nucampsite3,
+    image3: nucampsite2
     // video: greyAreaServicesVid,
   }
 

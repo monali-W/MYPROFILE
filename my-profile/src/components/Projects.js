@@ -5,74 +5,66 @@ class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      projects: PROJECTS,
-      selectedProject: null
+      projects: PROJECTS
     };
   }
 
   render() {
-    // const displayedProjects = this.state.projects;
     const displayProject = this.state.projects.map(project => {
       return (
         <>
-          {/* <div key={project.id} className="col-md-5 m-1">
-            <Card onClick={() => this.onCampsiteSelect(project)}>
-              <CardImg width="100%" src={project.image} alt={project.name} />
-            </Card>
-          </div> */}
-          <div row row-content>
-            <div class="col mx-auto">
-              <div
-                id="homeCarousel"
-                class="carousel slide"
-                data-bs-ride="carousel"
-              >
-                <div class="carousel-inner">
-                  <div key="s1" class="carousel-item active">
-                    <img class="d-block w-100" src={project.image1} alt="" />
-                  </div>
-                  <div key="s2" class="carousel-item">
-                    <img
-                      class="d-block w-100"
-                      src={project.image2}
-                      alt=" React LAke Campground"
-                    />
-                  </div>
-                  <div key="s3" class="carousel-item">
-                    <img
-                      class="d-block w-100"
-                      src={project.image1}
-                      alt=" Chrome React Campground"
-                    />
-                  </div>
+          {/* <div> */}
+          <div class="col-6 mx-auto">
+            <div
+              id={project.carouselId}
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div key="s1" class="carousel-item active" data-interval="500">
+                  <img src={project.image} alt="" />
                 </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#homeCarousel"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#homeCarousel"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+                <div key="s2" class="carousel-item" data-interval="1000">
+                  <img class="d-block w-100" src={project.image1} alt="" />
+                </div>
+                <div key="s3" class="carousel-item" data-interval="2000">
+                  <img class="d-block w-100" src={project.image1} alt="" />
+                </div>
+                <div key="s3" class="carousel-item" data-interval="3000">
+                  <img
+                    class="d-block w-100"
+                    src={project.image3}
+                    alt=" Chrome React Campground"
+                  />
+                </div>
               </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target={project.carouseltarget}
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target={project.carouseltarget}
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
+          {/* </div> */}
         </>
       );
     });
@@ -85,13 +77,8 @@ class Projects extends Component {
           </div>
         </div>
 
-        <div className="container">
+        <div id="projects-grid">
           <div className="row">{displayProject}</div>
-          <div className="row">
-            {/* <div className="col-md-5 m-1">
-              {this.renderSelectedProject(this.state.selectedProject)}
-            </div> */}
-          </div>
         </div>
 
         <div
