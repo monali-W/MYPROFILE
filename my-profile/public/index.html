@@ -27,6 +27,7 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link
@@ -39,5 +40,14 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <form name="contact-form" netlify netlify-honeypot="bot-field" hidden>
+      <input name="first-name" type="text" />
+      <input name="last-name" type="text" />
+      <input name="email" type="text" />
+      <textarea name="message" id="message" rows="3" cols="10"></textarea>
+      <div id="submit-bttn-div">
+        <input id="submit" type="submit" value="Submit" />
+      </div>
+    </form>
   </body>
 </html>
