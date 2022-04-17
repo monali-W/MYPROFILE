@@ -11,6 +11,7 @@ import nucampsite1 from "../images/nucampsite1.png";
 import nucampsite2 from "../images/nucampsite2.png";
 import nucampsite3 from "../images/nucampsite3.png";
 import giftCardWalletVideo from "../images/giftCardWalletVideo.mp4";
+import nucampVideo from "../images/nucampVideo.mp4";
 // import upNextImg from "../images/project-up-next-app.png";
 // import upNextVid from "../images/videos/upnext.mp4";
 
@@ -28,22 +29,23 @@ export const PROJECTS = [
     // image2: giftCardAdd,
     // image3: loginGiftCard,
     video: giftCardWalletVideo,
-    github: "https://github.com/monali-W/nucampsite",
-    demo: "https://github.com/monali-W/nucampsite"
+    github: "https://github.com/monali-W/giftcardwallet"
+    // demo: "https://github.com/monali-W/nucampsite"
   },
 
   {
     id: "project2",
     carouselId: "carousel2",
     carouseltarget: "#carousel2",
-    name: "Nucampsite",
+    name: "Campsite",
     description:
-      "  I proceeded to build this website using React, Bootstrap (via the ReactStrap library), and custom CSS. ",
-    image: nucampsite1
+      "This website allows to reserve, cancel and search campsite to campers. And provides better campground view with multiple images, feedback and provide comments. This is a react based single page aplication using botstrap, css, javascript.",
+    image: nucampsite1,
     // image1: nucampsite2,
     // image2: nucampsite3,
     // image3: nucampsite2
-    // video: greyAreaServicesVid,
+    video: nucampVideo,
+    github: "https://github.com/monali-W/nucampsite"
   }
 
   // {

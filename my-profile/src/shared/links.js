@@ -2,7 +2,7 @@ const links = [
   {
     id: 0,
     text: "home",
-    url: "#header-section"
+    url: "#head_section"
   },
   {
     id: 1,
