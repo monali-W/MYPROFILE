@@ -334,3 +334,37 @@ footer {
   color: hsla(0, 0%, 100%, 0.55);
   border-color: hsla(0, 0%, 100%, 0.1);
 }
+.modal-content img,
+.modal-content video {
+  max-width: 100%;
+  border-radius: 5px;
+}
+video {
+  object-fit: contain;
+}
+.project-description {
+  color: #47a6d7;
+  margin-top: 10px;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.modal-content a.code-bttn {
+  text-decoration: none;
+  background-color: #cdeeff;
+  border: 1px solid #1f5f82;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  color: #1f5f82;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 10px 15px;
+  transition-duration: 0.5s;
+  margin: 0 10px 0 0;
+}
