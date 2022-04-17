@@ -13,7 +13,6 @@ class Projects extends Component {
     const displayProject = this.state.projects.map(project => {
       return (
         <>
-          {/* <div> */}
           <div class="col-6 mx-auto">
             <div
               id={project.carouselId}
@@ -64,7 +63,6 @@ class Projects extends Component {
               </button>
             </div>
           </div>
-          {/* </div> */}
         </>
       );
     });
