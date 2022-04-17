@@ -49,15 +49,6 @@ function ProjectModal(props) {
               <div className="modal-bttn-container">
                 <a
                   className="code-bttn"
-                  id="active-project-demo"
-                  href={props.project.demo}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Live Demo
-                </a>
-                <a
-                  className="code-bttn"
                   id="active-project-github"
                   href={props.project.github}
                   target="_blank"

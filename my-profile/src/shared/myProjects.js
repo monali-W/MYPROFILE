@@ -10,7 +10,7 @@ import loginGiftCard from "../images/loginGiftCard.png";
 import nucampsite1 from "../images/nucampsite1.png";
 import nucampsite2 from "../images/nucampsite2.png";
 import nucampsite3 from "../images/nucampsite3.png";
-// import jobsAppVid from "../images/videos/jobsapp.mp4";
+import giftCardWalletVideo from "../images/giftCardWalletVideo.mp4";
 // import upNextImg from "../images/project-up-next-app.png";
 // import upNextVid from "../images/videos/upnext.mp4";
 
@@ -22,12 +22,12 @@ export const PROJECTS = [
 
     name: "Gift Card Wallet",
     description:
-      "This React-based application allows users to look for various types of campsites. Where It interfaces with both the  (Open Movie Database) API to display the desired information for the user and makes use of local storage for data persistence between sessions. I designed all UI components to be fully responsive through the use of custom CSS and flexbox. ",
+      "This React-based application allows to add multiple gift card in gift card wallet, buy or sell your gift cards. ",
     image: homePage,
     // image1: giftCard,
     // image2: giftCardAdd,
     // image3: loginGiftCard,
-    // video: upNextVid,
+    video: giftCardWalletVideo,
     github: "https://github.com/monali-W/nucampsite",
     demo: "https://github.com/monali-W/nucampsite"
   },
