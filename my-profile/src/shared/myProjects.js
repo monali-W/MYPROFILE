@@ -24,9 +24,9 @@ export const PROJECTS = [
     description:
       "This React-based application allows users to look for various types of campsites. Where It interfaces with both the  (Open Movie Database) API to display the desired information for the user and makes use of local storage for data persistence between sessions. I designed all UI components to be fully responsive through the use of custom CSS and flexbox. ",
     image: homePage,
-    image1: giftCard,
-    image2: giftCardAdd,
-    image3: loginGiftCard,
+    // image1: giftCard,
+    // image2: giftCardAdd,
+    // image3: loginGiftCard,
     // video: upNextVid,
     github: "https://github.com/monali-W/nucampsite",
     demo: "https://github.com/monali-W/nucampsite"
@@ -39,10 +39,10 @@ export const PROJECTS = [
     name: "Nucampsite",
     description:
       "  I proceeded to build this website using React, Bootstrap (via the ReactStrap library), and custom CSS. ",
-    image: nucampsite1,
-    image1: nucampsite2,
-    image2: nucampsite3,
-    image3: nucampsite2
+    image: nucampsite1
+    // image1: nucampsite2,
+    // image2: nucampsite3,
+    // image3: nucampsite2
     // video: greyAreaServicesVid,
   }
 
