@@ -23,7 +23,7 @@ class Header extends Component {
                     data-aos-duration="1000"
                   >
                     {" "}
-                    FRONTEND DEVELOPER
+                    WEB DEVELOPER
                   </h4>
                 </div>
               </div>
