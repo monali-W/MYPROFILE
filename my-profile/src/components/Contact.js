@@ -68,7 +68,7 @@ function ContactArea() {
           <div className="row">
             <div className="col text-center">
               <a
-                href="linkedin.com/in/monali-w-b036b2114"
+                href="https://www.linkedin.com/in/monali-w-b036b2114"
                 target="_blank"
                 rel="noreferrer"
               >

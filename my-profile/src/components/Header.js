@@ -23,8 +23,18 @@ class Header extends Component {
                     data-aos-duration="1000"
                   >
                     {" "}
-                    WEB DEVELOPER
+                    LEAD FRONT-END DEVELOPER
                   </h4>
+                  <a
+                    id="resume-download-btn"
+                    href={`${process.env.PUBLIC_URL}/resume.pdf`}
+                    download="Monali-Wasekar-Resume.pdf"
+                    data-aos="fade-up"
+                    data-aos-delay="150"
+                    data-aos-duration="1000"
+                  >
+                    Download R&eacute;sum&eacute;
+                  </a>
                 </div>
               </div>
             </div>

@@ -8,8 +8,8 @@ function Footer() {
           <div id="footer-container" className="row">
             <div className="col-12 col-sm-6 col-md-4 text-center">
               <div className="pt-3">
+                <h4>Monali Wasekar</h4>
                 <p className="body-copy">
-                  <h4> Monali Wasekar </h4>
                   Let's create something great together!
                 </p>
               </div>
