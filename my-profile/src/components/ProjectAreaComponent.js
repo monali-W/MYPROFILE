@@ -55,6 +55,7 @@ class ProjectArea extends Component {
         <div id="projects-grid">
           {displayProject.map(project => (
             <ProjectThumb
+              key={project.id}
               project={project}
               setActiveProject={this.setActiveProject}
             ></ProjectThumb>

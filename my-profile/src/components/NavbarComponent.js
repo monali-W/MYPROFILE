@@ -38,7 +38,7 @@ class Header extends Component {
   render() {
     const navLinks = links.map(link => {
       return (
-        <NavItem>
+        <NavItem key={link.id}>
           <a
             className="nav-link"
             href={link.url}

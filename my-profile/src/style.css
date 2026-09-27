@@ -22,6 +22,30 @@ body {
   font-weight: 500;
   font-size: 2rem;
 }
+
+#resume-download-btn {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 10px 28px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #cdeeff;
+  background-color: transparent;
+  border: 1px solid #cdeeff;
+  border-radius: 4px;
+  box-shadow: 0 4px #124663;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+#resume-download-btn:hover {
+  color: #0a5a83;
+  background-color: #cdeeff;
+  text-decoration: none;
+}
 .navbar-dark {
   /* margin-top: -16px; */
   background-color: #0a5a83;
@@ -98,9 +122,51 @@ p {
 #about-section #stack-div #stack-icon-div {
   max-height: 25vh;
   padding-bottom: 30px;
+  gap: 1.5vw;
+}
+#about-section #stack-div #stack-icon-div .stack-icon-item {
+  flex: 1 1 0;
+  min-width: 0;
 }
 #about-section #stack-div #stack-icon-div .stack-icon {
   max-height: 80px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+#experience-section {
+  background-color: #124663;
+  padding-bottom: 50px;
+}
+#experience-section .role-dates {
+  color: #6bb8d9;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#experience-section .experience-card {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-left: 3px solid #6bb8d9;
+  border-radius: 6px;
+  padding: 20px 24px;
+}
+#experience-section .experience-card h4 {
+  color: #cdeeff;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+#experience-section .experience-card-stack {
+  color: #6bb8d9;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+}
+#experience-section .experience-card p.body-copy {
+  margin-bottom: 0;
 }
 
 #projects-section {
@@ -367,4 +433,124 @@ p {
   padding: 10px 15px;
   transition-duration: 0.5s;
   margin: 0 10px 0 0;
+}
+
+/* ==========================================================================
+   Sidebar layout (desktop: fixed left sidebar + scrollable right content)
+   Below the lg breakpoint (992px), this stays hidden and the original
+   top jumbotron + sticky navbar (#mobile-header-nav) is used instead.
+   ========================================================================== */
+#sidebar {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  #mobile-header-nav {
+    display: none;
+  }
+
+  #sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 100vh;
+    padding: 60px 45px;
+    background: linear-gradient(to bottom, #0a5a83, #124663);
+    color: #cdeeff;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+
+  #main-content {
+    margin-left: 320px;
+  }
+}
+
+#sidebar-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 6px;
+}
+
+#sidebar-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #6bb8d9;
+  margin: 0 0 16px;
+}
+
+#sidebar-tagline {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #cdeeff;
+  margin-bottom: 36px;
+}
+
+#sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 36px;
+}
+
+#sidebar-nav li {
+  margin-bottom: 14px;
+}
+
+#sidebar-nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #cdeeff;
+  transition: color 0.2s;
+}
+
+#sidebar-nav a:hover {
+  color: white;
+}
+
+#sidebar-resume-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #cdeeff;
+  background-color: transparent;
+  border: 1px solid #cdeeff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+#sidebar-resume-btn:hover {
+  color: #0a5a83;
+  background-color: #cdeeff;
+  text-decoration: none;
+}
+
+#sidebar-social {
+  display: flex;
+  gap: 20px;
+}
+
+#sidebar-social img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  filter: brightness(2.2);
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+#sidebar-social a:hover img {
+  opacity: 1;
 }
