@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a5a83"/>
+      <stop offset="100%" stop-color="#124663"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+
+  <!-- simple house/inventory icon -->
+  <g transform="translate(600,290)" opacity="0.95">
+    <path d="M-90 10 L0 -80 L90 10 L90 110 L-90 110 Z" fill="none" stroke="#cdeeff" stroke-width="10" stroke-linejoin="round"/>
+    <rect x="-30" y="30" width="60" height="80" fill="none" stroke="#cdeeff" stroke-width="8"/>
+    <line x1="-55" y1="60" x2="-55" y2="85" stroke="#6bb8d9" stroke-width="8" stroke-linecap="round"/>
+    <line x1="55" y1="60" x2="55" y2="85" stroke="#6bb8d9" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <text x="600" y="520" text-anchor="middle" font-family="Montserrat, Helvetica, Arial, sans-serif" font-size="88" font-weight="700" fill="#ffffff">g&#235;nie</text>
+  <text x="600" y="575" text-anchor="middle" font-family="Montserrat, Helvetica, Arial, sans-serif" font-size="30" font-weight="500" fill="#6bb8d9" letter-spacing="2">HOUSEHOLD INVENTORY APP</text>
+  <text x="600" y="630" text-anchor="middle" font-family="Montserrat, Helvetica, Arial, sans-serif" font-size="22" fill="#cdeeff" letter-spacing="1">BETA &#8226; REACT 19 &#8226; TYPESCRIPT &#8226; SUPABASE</text>
+</svg>

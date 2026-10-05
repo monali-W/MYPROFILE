@@ -3,6 +3,18 @@ import { PROJECTS } from "../shared/myProjects";
 import ProjectModal from "./ProjectModalComponent";
 
 function ProjectThumb(props) {
+  const { project } = props;
+
+  // Projects with a live demo link open straight to that site; the rest
+  // still open the project modal (video/description/source code).
+  const handleClick = () => {
+    if (project.openDirect && project.demo) {
+      window.open(project.demo, "_blank", "noopener,noreferrer");
+    } else {
+      props.setActiveProject(project);
+    }
+  };
+
   return (
     <div
       className="project-thumb"
@@ -10,10 +22,10 @@ function ProjectThumb(props) {
       data-aos-delay="150"
       data-aos-duration="1000"
       style={{
-        backgroundImage: `url(${props.project.image})`,
+        backgroundImage: `url(${project.image})`,
         backgroundPosition: "center"
       }}
-      onClick={() => props.setActiveProject(props.project)}
+      onClick={handleClick}
     >
       {/* <img src={props.project.image} alt=""></img> */}
     </div>

@@ -168,6 +168,26 @@ p {
 #experience-section .experience-card p.body-copy {
   margin-bottom: 0;
 }
+#experience-section .experience-card-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #cdeeff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+#experience-section .experience-card-link:hover {
+  color: white;
+  text-decoration: none;
+}
+#experience-section .role-block + .role-block {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
 
 #projects-section {
   background-color: #1f5f82;

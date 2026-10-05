@@ -7,8 +7,19 @@ import nucampsite2 from "../images/nucampsite2.png";
 import nucampsite3 from "../images/nucampsite3.png";
 import giftCardWalletVideo from "../images/giftCardWalletVideo.mp4";
 import nucampVideo from "../images/nucampVideo.mp4";
+import genieCover from "../images/genie-cover.svg";
 
 export const PROJECTS = [
+  {
+    id: "project0",
+    name: "gënie — Household Inventory App",
+    description:
+      "A full-stack household inventory and shopping-list app (React 19, TypeScript, Vite, Zustand, Supabase/PostgreSQL) that syncs stock levels across family members in real time, with Supabase Row Level Security enforcing household-scoped data access. Currently in beta.",
+    image: genieCover,
+    demo: "https://invy-app.netlify.app/",
+    openDirect: true
+  },
+
   {
     id: "project1",
     carouselId: "carousel1",

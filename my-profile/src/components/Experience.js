@@ -1,5 +1,5 @@
 import React from "react";
-import { EXPERIENCE, HIGHLIGHTS } from "../shared/experience";
+import { ROLES } from "../shared/experience";
 
 function Experience() {
   return (
@@ -11,43 +11,70 @@ function Experience() {
           </div>
         </div>
 
-        <div
-          id="experience-role-div"
-          className="row"
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-        >
-          <div className="col-12">
-            <h4 className="pull-quote text-center text-sm-start">
-              {EXPERIENCE.role} &mdash; {EXPERIENCE.company}, {EXPERIENCE.location}
-            </h4>
-            <p className="role-dates text-center text-sm-start">
-              {EXPERIENCE.dates}
-            </p>
-            <p className="body-copy text-center text-sm-start">
-              {EXPERIENCE.summary}
-            </p>
-          </div>
-        </div>
-
-        <div id="experience-highlight-grid" className="row">
-          {HIGHLIGHTS.map((item, index) => (
+        {ROLES.map(role => (
+          <div key={role.id} className="role-block">
             <div
-              key={item.id}
-              className="col-12 col-md-6 py-3"
+              id="experience-role-div"
+              className="row"
               data-aos="fade-up"
-              data-aos-delay={50 + index * 50}
+              data-aos-delay="50"
               data-aos-duration="1000"
             >
-              <div className="experience-card h-100">
-                <h4>{item.name}</h4>
-                <div className="experience-card-stack">{item.stack}</div>
-                <p className="body-copy">{item.blurb}</p>
+              <div className="col-12">
+                <h4 className="pull-quote text-center text-sm-start">
+                  {role.company ? (
+                    <>
+                      {role.role} &mdash; {role.company}
+                      {role.location ? `, ${role.location}` : ""}
+                    </>
+                  ) : (
+                    role.role
+                  )}
+                </h4>
+                {role.dates && (
+                  <p className="role-dates text-center text-sm-start">
+                    {role.dates}
+                  </p>
+                )}
+                <p className="body-copy text-center text-sm-start">
+                  {role.summary}
+                </p>
               </div>
             </div>
-          ))}
-        </div>
+
+            <div className="row experience-highlight-grid">
+              {role.highlights.map((item, index) => (
+                <div
+                  key={item.id}
+                  className={
+                    role.highlights.length === 1
+                      ? "col-12 col-md-8 py-3"
+                      : "col-12 col-md-6 py-3"
+                  }
+                  data-aos="fade-up"
+                  data-aos-delay={50 + index * 50}
+                  data-aos-duration="1000"
+                >
+                  <div className="experience-card h-100">
+                    <h4>{item.name}</h4>
+                    <div className="experience-card-stack">{item.stack}</div>
+                    <p className="body-copy">{item.blurb}</p>
+                    {item.link && (
+                      <a
+                        className="experience-card-link"
+                        href={item.link}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {item.linkLabel || "View Live"} &rarr;
+                      </a>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

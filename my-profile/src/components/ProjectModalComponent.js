@@ -34,7 +34,9 @@ function ProjectModal(props) {
         <ModalBody>
           <div className="modal-column-container">
             <div className="modal-img-column">
-              {window.innerWidth < 575 ? projectImg : projectVid}
+              {!props.project.video || window.innerWidth < 575
+                ? projectImg
+                : projectVid}
             </div>
 
             <div className="modal-description-column">
@@ -47,15 +49,28 @@ function ProjectModal(props) {
               </p>
 
               <div className="modal-bttn-container">
-                <a
-                  className="code-bttn"
-                  id="active-project-github"
-                  href={props.project.github}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Source Code
-                </a>
+                {props.project.demo && (
+                  <a
+                    className="code-bttn"
+                    id="active-project-demo"
+                    href={props.project.demo}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Live Demo
+                  </a>
+                )}
+                {props.project.github && (
+                  <a
+                    className="code-bttn"
+                    id="active-project-github"
+                    href={props.project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Source Code
+                  </a>
+                )}
               </div>
             </div>
           </div>
